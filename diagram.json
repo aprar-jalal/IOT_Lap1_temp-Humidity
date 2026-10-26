@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "author": "Moamin Abughazaleh",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -12.6, "left": -179.6, "attrs": {} },
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -28.8, "left": -283.16, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 6, "left": -15.4, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 100.8,
+      "left": -19.75,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -76.5,
+      "left": -101.4,
+      "attrs": { "temperature": "18.2" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "bb1:17t.e", "bb1:bn.14", "green", [ "v0" ] ],
+    [ "r1:2", "bb1:bp.15", "green", [ "h0" ] ],
+    [ "esp:23", "bb1:bp.1", "green", [ "h19.2", "v201.6", "h182.4" ] ],
+    [ "bb1:bn.2", "esp:GND.1", "black", [ "v56.3", "h-180.8", "v-105.6", "h9.6" ] ],
+    [ "dht1:GND", "bb1:bn.9", "black", [ "v0" ] ],
+    [ "dht1:SDA", "esp:15", "green", [ "v0" ] ],
+    [ "bb1:8t.e", "esp:3V3", "green", [ "v0", "h-96", "v-96", "h-115.2", "v28.8" ] ],
+    [ "dht1:SDA", "bb1:9t.e", "green", [ "v0" ] ],
+    [ "led1:A", "bb1:18t.b", "", [ "$bb" ] ],
+    [ "led1:C", "bb1:17t.b", "", [ "$bb" ] ],
+    [ "r1:1", "bb1:18t.e", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:18b.i", "", [ "$bb" ] ],
+    [ "dht1:VCC", "bb1:8t.a", "", [ "$bb" ] ],
+    [ "dht1:SDA", "bb1:9t.a", "", [ "$bb" ] ],
+    [ "dht1:NC", "bb1:10t.a", "", [ "$bb" ] ],
+    [ "dht1:GND", "bb1:11t.a", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}
