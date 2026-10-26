@@ -30,9 +30,9 @@ The project is simulated using **Wokwi**. An optional LED connected to GPIO 23 t
 The full circuit schematic is available in the Wokwi project below. The LED is an extra feature, not a requirement for the sensor upload.
 
 ## Project Links
-- **Wokwi simulation:** https://wokwi.com/projects/478788292885916673
-- **Public ThingSpeak channel:** https://thingspeak.com/channels/3549623
-- **ThingSpeak Channel ID:** `3549623`
+- **Wokwi simulation:** https://wokwi.com/projects/478943590042326017
+- **Public ThingSpeak channel:** https://thingspeak.mathworks.com/channels/3550057
+- **ThingSpeak Channel ID:** `3550057`
 
 The ThingSpeak channel is configured for public viewing.
 
