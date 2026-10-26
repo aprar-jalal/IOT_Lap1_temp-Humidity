@@ -6,7 +6,7 @@ This project uses an ESP32 microcontroller and a DHT22 sensor to monitor tempera
 The project is simulated using **Wokwi**. An optional LED connected to GPIO 23 turns on when the temperature exceeds 30°C.
 
 ## Student Information
-- **Full name:** [Enter your full name]
+- **Full name:** aprar jalal ahmad ismail
 - **University ID:** 12324682
 
 ## Components and Software
